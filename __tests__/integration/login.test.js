@@ -119,7 +119,7 @@ describe('login', () => {
         expect(response.body.token).toEqual(token);
     });
 
-    it('should not enter in private routes without a valid token', async () => {
+    it('should not enter in private routes without a token', async () => {
         const user = await User.create({
             name: "Jon",
             email: "jonathan@gmail.com",
